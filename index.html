@@ -9,17 +9,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="meteo.js"></script>
     <title>API OpenWeatherMap</title>
 </head>
 <body id="bg">
 
     <div class="jumbotron text-center" style="margin-bottom:0">
         <h2>API OpenWeatherMap</h2>
-            <input type="text" id="userQuery" placeholder="Choose a location">
-            <button class="btn- btn-danger" onclick="getWeather()" ><span class="glyphicon glyphicon-search"></span></button>
+            <!-- <input type="text" id="userQuery" placeholder="Choose a location"> -->
+            <label for="city">Choose a city:</label>
+            <section id="cities">
+                <button class="btn- btn-danger" onclick="getWeather()" ><span class="glyphicon glyphicon-search"></span></button>
+            </section>
         <h3 id="resultat">. . .</h3>
     </div>
-    
+    <script src="meteo.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
